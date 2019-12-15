@@ -12,6 +12,7 @@
     </parent>
 
     <artifactId>book-ratings-frontend</artifactId>
+    <packaging>pom</packaging>
     <name>Book ratings - frontend</name>
 
 </project>
