@@ -1,0 +1,2 @@
+rating;movie_id;user_account_id
+7;(SELECT id FROM movie WHERE title = 'Titanic');(SELECT id FROM user_account WHERE login = 'jbond')

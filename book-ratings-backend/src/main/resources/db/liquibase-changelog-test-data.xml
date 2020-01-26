@@ -1,0 +1,35 @@
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+
+    <changeSet id="user-account-test-data" author="d.mrowinski" context="test-data" runOnChange="true">
+        <loadUpdateData file="data/test/user_account.csv"
+                        primaryKey="login"
+                        tableName="user_account"
+                        relativeToChangelogFile="true"
+                        separator=";">
+        </loadUpdateData>
+    </changeSet>
+
+    <changeSet id="movie-test-data" author="d.mrowinski" context="test-data" runOnChange="true">
+        <loadUpdateData file="data/test/movie.csv"
+                        primaryKey="title"
+                        tableName="movie"
+                        relativeToChangelogFile="true"
+                        separator=";">
+        </loadUpdateData>
+    </changeSet>
+
+    <changeSet id="rating-test-data" author="d.mrowinski" context="test-data" runOnChange="true">
+        <loadUpdateData file="data/test/rating.csv"
+                        primaryKey="movie_id,user_account_id"
+                        tableName="rating"
+                        relativeToChangelogFile="true"
+                        separator=";">
+            <column name="movie_id" type="COMPUTED"/>
+            <column name="user_account_id" type="COMPUTED"/>
+        </loadUpdateData>
+    </changeSet>
+
+</databaseChangeLog>
