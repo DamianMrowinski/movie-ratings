@@ -1,15 +1,21 @@
-Book Ratings
+Movie Ratings
 ---------------------------------------------
 
-The application will allow to rate books, write reviews and get recommendations. <br>
-The main purpose of the application is using Angular 8 in practice.
-
-This project will contain technologies:
+This project contains technologies:
 - Angular 8
-- Spring Boot
+- Spring Boot 2.2.2
 - Java 11
 - JPA + Hibernate
-- PostgreSQL
-- Maven
+- PostgreSQL 12
+- Maven 3.6.2
 
-Currently I'm acquiring knowledge of Angular to start this project.
+The application will allow to:
+- rate movies and keep track of what movies you have seen
+- show the list of top movies
+- show details of selected movie
+- check coming soon movies
+- show recommendations
+
+The main purpose of the application is using Angular 8 in practice.
+
+Currently I'm acquiring knowledge of Angular to finish this project.

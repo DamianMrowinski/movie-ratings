@@ -13,14 +13,14 @@
     </parent>
 
     <groupId>pl.damianmrowinski</groupId>
-    <artifactId>book-ratings</artifactId>
+    <artifactId>movie-ratings</artifactId>
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
-    <name>Book ratings</name>
+    <name>Movie ratings</name>
 
     <modules>
-        <module>book-ratings-backend</module>
-        <module>book-ratings-frontend</module>
+        <module>movie-ratings-backend</module>
+        <module>movie-ratings-frontend</module>
     </modules>
 
     <properties>

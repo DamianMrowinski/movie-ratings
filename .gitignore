@@ -9,5 +9,5 @@ out
 gen
 
 # Project exclude paths
-/book-ratings-backend/target/
-/book-ratings-frontend/target/
+/movie-ratings-backend/target/
+/movie-ratings-frontend/target/
