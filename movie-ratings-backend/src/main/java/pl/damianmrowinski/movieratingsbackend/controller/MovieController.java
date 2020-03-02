@@ -1,15 +1,13 @@
 package pl.damianmrowinski.movieratingsbackend.controller;
 
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import pl.damianmrowinski.movieratingsbackend.domain.MovieEntity;
 import pl.damianmrowinski.movieratingsbackend.repository.MovieRepository;
 
 import java.util.Optional;
 
 @RestController
+@CrossOrigin
 @RequestMapping("/movies")
 public class MovieController {
 

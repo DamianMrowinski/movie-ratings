@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {Movie} from "../../shared/model/movie";
+import {MovieDataService} from "../../shared/service/data/movie-data.service";
 
 @Component({
   selector: 'app-movies-page',
@@ -7,9 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MoviesPageComponent implements OnInit {
 
-  constructor() { }
+  movies: Movie[];
 
-  ngOnInit() {
+  constructor(private movieDataService: MovieDataService) {
+  }
+
+  ngOnInit(): void {
+    this.movieDataService.getMovies$()
+      .subscribe(movies => this.movies = movies);
   }
 
 }

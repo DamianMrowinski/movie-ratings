@@ -12,25 +12,15 @@
         </tr>
         </thead>
         <tbody>
-        <tr>
-          <th scope="row">1</th>
+        <tr *ngFor="let movie of movies">
+          <th scope="row">{{ movie.id }}</th>
           <td class="w-25">
             <img
               src="https://m.media-amazon.com/images/M/MV5BM2MyNjYxNmUtYTAwNi00MTYxLWJmNWYtYzZlODY3ZTk3OTFlXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_.jpg"
               class="img-fluid img-thumbnail" alt="Sheep">
           </td>
-          <td>The Godfather - for testing purpose</td>
-          <td>1972 - for testing purpose</td>
-        </tr>
-        <tr>
-          <th scope="row">2</th>
-          <td class="w-25">
-            <img
-              src="https://m.media-amazon.com/images/M/MV5BNjgwODlhZDctNzlmNS00MTBmLTg0NDgtNzBhNWMwZWVmNzExXkEyXkFqcGdeQXVyMTAyOTE2ODg0._V1_.jpg"
-              class="img-fluid img-thumbnail" alt="Sheep">
-          </td>
-          <td>Goodfellas - for testing purpose</td>
-          <td>1990 - for testing purpose</td>
+          <td>{{ movie.title }}</td>
+          <td>{{ movie.year }}</td>
         </tr>
         </tbody>
       </table>
