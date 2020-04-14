@@ -1,4 +1,6 @@
-package pl.damianmrowinski.movieratingsbackend.domain;
+package pl.damianmrowinski.movieratingsbackend.domain.entity.movie;
+
+import pl.damianmrowinski.movieratingsbackend.domain.entity.user.UserAccountEntity;
 
 import javax.persistence.*;
 

@@ -1,4 +1,4 @@
-package pl.damianmrowinski.movieratingsbackend.domain;
+package pl.damianmrowinski.movieratingsbackend.domain.entity.movie;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
