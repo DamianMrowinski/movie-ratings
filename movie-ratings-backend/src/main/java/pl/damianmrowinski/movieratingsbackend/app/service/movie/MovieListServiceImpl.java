@@ -29,5 +29,4 @@ class MovieListServiceImpl implements MovieListService {
                 .map(movieEntityToMovieDtoConverter::convert)
                 .collect(Collectors.toList());
     }
-
 }

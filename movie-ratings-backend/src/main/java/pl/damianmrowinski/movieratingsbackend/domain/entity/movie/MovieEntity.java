@@ -24,6 +24,8 @@ public class MovieEntity {
 
     private String country;
 
+    private String img;
+
     @JsonIgnore
     @OneToMany(mappedBy = "movie")
     private List<RatingEntity> ratings = new ArrayList<>();
@@ -31,13 +33,20 @@ public class MovieEntity {
     protected MovieEntity() {
     }
 
-    public MovieEntity(String title, String description, Integer year, String director, String country, List<RatingEntity> ratings) {
+    public MovieEntity(String title,
+                       String description,
+                       Integer year,
+                       String director,
+                       String country,
+                       List<RatingEntity> ratings,
+                       String img) {
         this.title = title;
         this.description = description;
         this.year = year;
         this.director = director;
         this.country = country;
         this.ratings = ratings;
+        this.img = img;
     }
 
     public Long getId() {
@@ -66,5 +75,9 @@ public class MovieEntity {
 
     public List<RatingEntity> getRatings() {
         return ratings;
+    }
+
+    public String getImg() {
+        return img;
     }
 }

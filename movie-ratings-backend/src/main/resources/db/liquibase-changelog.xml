@@ -40,6 +40,9 @@
             <column name="country" type="VARCHAR(256)">
                 <constraints nullable="false"/>
             </column>
+            <column name="img" type="VARCHAR(500)">
+                <constraints nullable="false"/>
+            </column>
         </createTable>
     </changeSet>
 

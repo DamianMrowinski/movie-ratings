@@ -1,8 +1,9 @@
 package pl.damianmrowinski.movieratingsbackend.rest.controller;
 
 import org.springframework.web.bind.annotation.*;
+import pl.damianmrowinski.movieratingsbackend.app.service.movie.MovieDetailsService;
 import pl.damianmrowinski.movieratingsbackend.app.service.movie.MovieListService;
-import pl.damianmrowinski.movieratingsbackend.domain.entity.movie.MovieEntity;
+import pl.damianmrowinski.movieratingsbackend.dto.MovieDetailsDto;
 import pl.damianmrowinski.movieratingsbackend.dto.MovieDto;
 
 import java.util.List;
@@ -12,10 +13,13 @@ import java.util.List;
 @RequestMapping("/movies")
 public class MovieController {
 
-    private MovieListService movieListService;
+    private final MovieListService movieListService;
+    private final MovieDetailsService movieDetailsService;
 
-    public MovieController(MovieListService movieListService) {
+    public MovieController(MovieListService movieListService,
+                           MovieDetailsService movieDetailsService) {
         this.movieListService = movieListService;
+        this.movieDetailsService = movieDetailsService;
     }
 
     @GetMapping
@@ -24,7 +28,7 @@ public class MovieController {
     }
 
     @GetMapping("/{movieId}")
-    public MovieEntity findMovieById(@PathVariable Long movieId) {
-        return null;
+    public MovieDetailsDto findMovieById(@PathVariable Long movieId) {
+        return movieDetailsService.findById(movieId);
     }
 }

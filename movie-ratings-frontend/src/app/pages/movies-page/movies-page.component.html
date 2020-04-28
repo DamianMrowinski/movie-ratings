@@ -13,11 +13,11 @@
         </thead>
         <tbody>
         <tr *ngFor="let movie of movies">
-          <th scope="row">{{ movie.id }}</th>
-          <td class="w-25">
-            <img
-              src="https://m.media-amazon.com/images/M/MV5BM2MyNjYxNmUtYTAwNi00MTYxLWJmNWYtYzZlODY3ZTk3OTFlXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_.jpg"
-              class="img-fluid img-thumbnail" alt="Sheep">
+          <td>{{ movie.id }}</td>
+          <td>
+            <img src="{{ movie.img }}"
+                 alt="movie-img"
+                 height="150"/>
           </td>
           <td>{{ movie.title }}</td>
           <td>{{ movie.year }}</td>
