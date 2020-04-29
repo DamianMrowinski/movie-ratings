@@ -12,7 +12,11 @@ export class MovieDataService {
   }
 
   getMovies$(): Observable<Movie[]> {
-    return this.http.get<Movie[]>('http://localhost:8080/' + 'movies');
+    return this.http.get<Movie[]>('http://localhost:8080/movies');
+  }
+
+  getMovieDetails$(movieId: number): Observable<Movie> {
+    return this.http.get<Movie>(`http://localhost:8080/movies/${movieId}`);
   }
 
 }

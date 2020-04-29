@@ -10,6 +10,7 @@ import {LoginPageComponent} from './pages/login-page/login-page.component';
 import {ComingSoonPageComponent} from './pages/coming-soon-page/coming-soon-page.component';
 import {PageNotFoundComponent} from './pages/page-not-found/page-not-found.component';
 import {HttpClientModule} from "@angular/common/http";
+import { MovieDetailsPageComponent } from './pages/movie-details-page/movie-details-page.component';
 
 @NgModule({
   declarations: [
@@ -18,13 +19,14 @@ import {HttpClientModule} from "@angular/common/http";
     FooterComponent,
     HeaderComponent,
     LoginPageComponent,
+    MovieDetailsPageComponent,
     MoviesPageComponent,
     PageNotFoundComponent,
   ],
   imports: [
+    AppRoutingModule,
     BrowserModule,
     HttpClientModule,
-    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
