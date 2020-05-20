@@ -24,7 +24,7 @@ public class MovieEntity {
 
     private String country;
 
-    private String img;
+    private String imgUrl;
 
     @JsonIgnore
     @OneToMany(mappedBy = "movie")
@@ -39,14 +39,14 @@ public class MovieEntity {
                        String director,
                        String country,
                        List<RatingEntity> ratings,
-                       String img) {
+                       String imgUrl) {
         this.title = title;
         this.description = description;
         this.year = year;
         this.director = director;
         this.country = country;
         this.ratings = ratings;
-        this.img = img;
+        this.imgUrl = imgUrl;
     }
 
     public Long getId() {
@@ -77,7 +77,7 @@ public class MovieEntity {
         return ratings;
     }
 
-    public String getImg() {
-        return img;
+    public String getImgUrl() {
+        return imgUrl;
     }
 }

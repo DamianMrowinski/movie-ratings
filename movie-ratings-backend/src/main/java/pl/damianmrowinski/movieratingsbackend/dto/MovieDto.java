@@ -5,16 +5,16 @@ public class MovieDto {
     private final Long id;
     private final String title;
     private final Integer year;
-    private final String img;
+    private final String imgUrl;
 
     public MovieDto(Long id,
                     String title,
                     Integer year,
-                    String img) {
+                    String imgUrl) {
         this.id = id;
         this.title = title;
         this.year = year;
-        this.img = img;
+        this.imgUrl = imgUrl;
     }
 
     public Long getId() {
@@ -29,7 +29,7 @@ public class MovieDto {
         return year;
     }
 
-    public String getImg() {
-        return img;
+    public String getImgUrl() {
+        return imgUrl;
     }
 }

@@ -15,7 +15,7 @@
         <tr *ngFor="let movie of movies">
           <td>{{ movie.id }}</td>
           <td>
-            <img src="{{ movie.img }}"
+            <img src="{{ movie.imgUrl }}"
                  alt="movie-img"
                  height="150"
                  (click)="onMoviesImageClick(movie.id)">

@@ -9,7 +9,8 @@ import {MovieDetailsPageComponent} from "./pages/movie-details-page/movie-detail
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'movies', pathMatch: 'full'
+    redirectTo: 'movies',
+    pathMatch: 'full'
   },
   {
     path: 'movies',
@@ -28,7 +29,8 @@ const routes: Routes = [
     component: LoginPageComponent
   },
   {
-    path: '**', component: PageNotFoundComponent
+    path: '**',
+    component: PageNotFoundComponent
   },
 ];
 

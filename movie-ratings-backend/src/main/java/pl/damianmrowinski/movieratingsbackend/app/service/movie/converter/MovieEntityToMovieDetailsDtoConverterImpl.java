@@ -15,7 +15,8 @@ class MovieEntityToMovieDetailsDtoConverterImpl implements MovieEntityToMovieDet
                 movie.getDescription(),
                 movie.getYear(),
                 movie.getDirector(),
-                movie.getCountry()
+                movie.getCountry(),
+                movie.getImgUrl()
         );
     }
 }

@@ -13,7 +13,7 @@ class MovieEntityToMovieDtoConverterImpl implements MovieEntityToMovieDtoConvert
                 movie.getId(),
                 movie.getTitle(),
                 movie.getYear(),
-                movie.getImg()
+                movie.getImgUrl()
         );
     }
 }
