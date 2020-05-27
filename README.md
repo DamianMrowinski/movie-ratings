@@ -19,3 +19,27 @@ The application will allow to:
 The main purpose of the application is using Angular 8 in practice.
 
 Currently I'm acquiring knowledge of Angular to finish this project.
+
+## Run with docker-compose
+
+In order to start PostgreSQL please run prepared script:
+```
+cd docker/dependencies
+
+# On Linux / MacOS
+./start.sh
+
+# On Windows
+start.sh
+```
+
+In order to stop PostgreSQL, you can use following script:
+```
+cd docker/dependencies
+
+# On Linux / MacOS
+./stop.sh
+
+# On Windows
+stop.sh
+```

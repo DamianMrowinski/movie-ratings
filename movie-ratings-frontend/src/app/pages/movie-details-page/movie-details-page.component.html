@@ -1,10 +1,16 @@
 <div class="container">
-  <p><img src="{{ movie.imgUrl }}"
-          alt="movie-img"
-          width="200"></p>
-  <p>Title: {{ movie.title }}</p>
-  <p>Year: {{ movie.year }}</p>
-  <p>Country: {{ movie.country }}</p>
-  <p>Director: {{ movie.director }}</p>
-  <p>Description: {{ movie.description }}</p>
+  <div class="movie-details-img">
+    <img src="{{ movie.imgUrl }}"
+         class="rounded-lg"
+         alt="movie-img"
+         width="200">
+  </div>
+  <div class="movie-details-info">
+    <p><b>{{ movie.title }} </b></p>
+    <p><b><i>{{ movie.description }}</i></b></p>
+    <p>Rate: {{10}}</p>
+    <p>Director: {{ movie.director }}</p>
+    <p>Country: {{ movie.country }}</p>
+    <p>Year: {{ movie.year }}</p>
+  </div>
 </div>
