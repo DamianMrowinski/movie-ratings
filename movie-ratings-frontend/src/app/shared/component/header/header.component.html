@@ -1,20 +1,56 @@
-<div class="container">
-  <header class="header py-4">
-    <div class="row flex-nowrap justify-content-between logo">
-      <div class="col-4">
-        <a class="header-logo text-dark" href="movies">Movie ratings</a>
+<div class="container sticky-top">
+  <nav ngxNavbarDynamicExpand
+       class="bg-white">
+    <aside class="menu-sidebar d-none d-lg-block">
+      <div class="logo">
+        <a href="#">
+          <img src="assets/img/header_logo/logo.jpg"
+               alt="logo"
+               class="img-responsive"
+               id="logo-jpg">
+        </a>
       </div>
-      <div class="col-4 d-flex justify-content-end align-items-center">
-        <a class="btn btn-lg btn-primary" href="login">Log in</a>
-      </div>
-    </div>
-  </header>
+    </aside>
 
-  <div class="nav-scroller py-1 mb-3 h4">
-    <nav class="nav justify-content-between bg-dark menu">
-      <a class="p-2 text-light" href="movies">Top rated movies</a>
-      <a class="p-2 text-light" href="coming-soon">Coming soon</a>
-      <a class="p-2 text-light" href="recommendations">Recommendations</a>
-    </nav>
-  </div>
+    <button class="navbar-toggler"
+            type="button"
+            (click)="collapse.toggle()">
+      <span class="navbar-toggler-icon d-flex align-items-center justify-content-center"></span>
+    </button>
+    <ngx-navbar-collapse id="main-nav"
+                         #collapse="ngxNavbarCollapse">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item nav-item-spacing">
+          <a class="nav-link header-fonts-tabs"
+             href="movies">Top Movies</a>
+        </li>
+        <li class="nav-item nav-item-spacing">
+          <a class="nav-link header-fonts-tabs"
+             href="coming-soon">Coming Soon</a>
+        </li>
+        <li class="nav-item nav-item-spacing">
+          <a class="nav-link header-fonts-tabs"
+             href="recommendations">Recommendations</a>
+        </li>
+      </ul>
+      <div class="btn-group"
+           dropdown>
+        <a dropdownToggle
+           class="btn dropdown-toggle header-fonts-logout">Johnny1241</a>
+        <ul id="dropdown-basic"
+            *dropdownMenu
+            class="dropdown-menu"
+            role="menu">
+          <li role="menuitem">
+            <a class="dropdown-item"
+               href="#">Account</a>
+          </li>
+          <li class="divider dropdown-divider"></li>
+          <li role="menuitem">
+            <a class="dropdown-item" href="#">Logout</a>
+          </li>
+        </ul>
+      </div>
+    </ngx-navbar-collapse>
+  </nav>
 </div>

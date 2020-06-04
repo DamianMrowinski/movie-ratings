@@ -8,7 +8,8 @@
   <div class="movie-details-info">
     <p><b>{{ movie.title }} </b></p>
     <p><b><i>{{ movie.description }}</i></b></p>
-    <p>Rate: {{10}}</p>
+    <rating [(ngModel)]="rate" [max]="max" [readonly]="isReadonly"></rating>
+    <p>Rate: {{rate}}</p>
     <p>Director: {{ movie.director }}</p>
     <p>Country: {{ movie.country }}</p>
     <p>Year: {{ movie.year }}</p>

@@ -2,6 +2,7 @@
   "name": "movie-ratings-frontend",
   "version": "0.0.0",
   "scripts": {
+    "extract-i18n": "ngx-translate-extract --input ./src --output ./src/assets/i18n/locale-en.json ./src/assets/i18n/locale-de.json --sort --clean",
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
@@ -12,6 +13,7 @@
   "private": true,
   "dependencies": {
     "@angular/animations": "~9.1.9",
+    "@angular/cdk": "^9.2.4",
     "@angular/common": "~9.1.9",
     "@angular/compiler": "~9.1.9",
     "@angular/core": "~9.1.9",
@@ -19,7 +21,9 @@
     "@angular/platform-browser": "~9.1.9",
     "@angular/platform-browser-dynamic": "~9.1.9",
     "@angular/router": "~9.1.9",
-    "bootstrap": "^4.5.0",
+    "ngx-bootstrap": "^5.6.1",
+    "ngx-bootstrap-navbar": "0.0.5",
+    "puppeteer": "3.1.0",
     "rxjs": "~6.5.5",
     "tslib": "^1.10.0",
     "zone.js": "~0.10.3"
@@ -29,6 +33,7 @@
     "@angular/cli": "^9.1.7",
     "@angular/compiler-cli": "^9.1.9",
     "@angular/language-service": "~9.1.9",
+    "@biesbjerg/ngx-translate-extract": "4.2.0",
     "@types/jasmine": "~3.3.8",
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "~8.9.4",

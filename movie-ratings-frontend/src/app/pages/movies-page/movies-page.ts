@@ -5,10 +5,10 @@ import {NavigationService} from "../../shared/service/navigation/navigation.serv
 
 @Component({
   selector: 'app-movies-page',
-  templateUrl: './movies-page.component.html',
-  styleUrls: ['./movies-page.component.scss']
+  templateUrl: './movies-page.html',
+  styleUrls: ['./movies-page.scss']
 })
-export class MoviesPageComponent implements OnInit {
+export class MoviesPage implements OnInit {
 
   movies: Movie[];
 

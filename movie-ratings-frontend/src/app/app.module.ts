@@ -2,16 +2,17 @@ import {BrowserModule} from '@angular/platform-browser';
 import {NgModule} from '@angular/core';
 import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
-import {MoviesPageComponent} from './pages/movies-page/movies-page.component';
+import {MoviesPage} from './pages/movies-page/movies-page';
 import {HeaderComponent} from './shared/component/header/header.component';
 import {FooterComponent} from './shared/component/footer/footer.component';
-import {LoginPageComponent} from './pages/login-page/login-page.component';
-import {ComingSoonPageComponent} from './pages/coming-soon-page/coming-soon-page.component';
+import {LoginPage} from './pages/login-page/login-page';
+import {ComingSoonPage} from './pages/coming-soon-page/coming-soon-page';
 import {PageNotFoundComponent} from './pages/page-not-found/page-not-found.component';
 import {HttpClientModule} from "@angular/common/http";
-import {MovieDetailsPageComponent} from './pages/movie-details-page/movie-details-page.component';
+import {MovieDetailsPage} from './pages/movie-details-page/movie-details-page';
 import {FormsModule} from "@angular/forms";
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {NgxBootstrapModule} from "./shared/module/ngx-bootstrap.module";
 
 const COMPONENTS = [
   AppComponent,
@@ -20,10 +21,10 @@ const COMPONENTS = [
 ];
 
 const PAGES = [
-  ComingSoonPageComponent,
-  LoginPageComponent,
-  MovieDetailsPageComponent,
-  MoviesPageComponent,
+  ComingSoonPage,
+  LoginPage,
+  MovieDetailsPage,
+  MoviesPage,
   PageNotFoundComponent,
 ];
 
@@ -38,6 +39,7 @@ const PAGES = [
     BrowserModule,
     FormsModule,
     HttpClientModule,
+    NgxBootstrapModule
   ],
   providers: [],
   bootstrap: [AppComponent]

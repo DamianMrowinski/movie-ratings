@@ -1,20 +1,20 @@
 import {async, ComponentFixture, TestBed} from '@angular/core/testing';
+import {LoginPage} from './login-page';
 
-import {ComingSoonPageComponent} from './coming-soon-page.component';
+describe('LoginPage', () => {
 
-describe('ComingSoonPageComponent', () => {
-  let component: ComingSoonPageComponent;
-  let fixture: ComponentFixture<ComingSoonPageComponent>;
+  let component: LoginPage;
+  let fixture: ComponentFixture<LoginPage>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ComingSoonPageComponent]
+      declarations: [LoginPage]
     })
       .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ComingSoonPageComponent);
+    fixture = TestBed.createComponent(LoginPage);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

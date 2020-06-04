@@ -1,10 +1,10 @@
 import {NgModule} from '@angular/core';
 import {RouterModule, Routes} from '@angular/router';
-import {MoviesPageComponent} from "./pages/movies-page/movies-page.component";
-import {ComingSoonPageComponent} from "./pages/coming-soon-page/coming-soon-page.component";
-import {LoginPageComponent} from "./pages/login-page/login-page.component";
-import {PageNotFoundComponent} from "./pages/page-not-found/page-not-found.component";
-import {MovieDetailsPageComponent} from "./pages/movie-details-page/movie-details-page.component";
+import {ComingSoonPage} from './pages/coming-soon-page/coming-soon-page';
+import {LoginPage} from './pages/login-page/login-page';
+import {PageNotFoundComponent} from './pages/page-not-found/page-not-found.component';
+import {MovieDetailsPage} from './pages/movie-details-page/movie-details-page';
+import {MoviesPage} from './pages/movies-page/movies-page';
 
 const routes: Routes = [
   {
@@ -14,19 +14,19 @@ const routes: Routes = [
   },
   {
     path: 'movies',
-    component: MoviesPageComponent
+    component: MoviesPage
   },
   {
     path: 'movies/:id',
-    component: MovieDetailsPageComponent
+    component: MovieDetailsPage
   },
   {
     path: 'coming-soon',
-    component: ComingSoonPageComponent
+    component: ComingSoonPage
   },
   {
     path: 'login',
-    component: LoginPageComponent
+    component: LoginPage
   },
   {
     path: '**',

@@ -5,12 +5,15 @@ import {ActivatedRoute} from "@angular/router";
 
 @Component({
   selector: 'app-movie-details-page',
-  templateUrl: './movie-details-page.component.html',
-  styleUrls: ['./movie-details-page.component.scss']
+  templateUrl: './movie-details-page.html',
+  styleUrls: ['./movie-details-page.scss']
 })
-export class MovieDetailsPageComponent implements OnInit {
+export class MovieDetailsPage implements OnInit {
 
   movie: Movie;
+  max = 10;
+  rate = 7;
+  isReadonly = false;
 
   constructor(private activatedRoute: ActivatedRoute,
               private movieDataService: MovieDataService) {
