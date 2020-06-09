@@ -1,4 +1,31 @@
 <div class="container sticky-top">
+  <div id="language-flag">
+    <div class="btn-group"
+         dropdown>
+      <a dropdownToggle>
+        <img src="assets/img/header_flags/flag-uk.png"/></a>
+      <ul *dropdownMenu
+          class="dropdown-menu flag-menu hover-menu"
+          role="menu">
+        <li role="menuitem">
+          <a class="dropdown-item">
+            <img src="assets/img/header_flags/flag-uk.png"/> English</a>
+        </li>
+        <li role="menuitem">
+          <a class="dropdown-item"
+             href="#">
+            <img src="assets/img/header_flags/flag-de.png"/> Deutsch</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <select #langselect
+          class="select-language"
+          (change)="translateService.use(langselect.value)">
+    <option *ngFor="let lang of translateService.getLangs()"
+            [value]="lang">{{ lang }}</option>
+  </select>
+
   <nav ngxNavbarDynamicExpand
        class="bg-white">
     <aside class="menu-sidebar d-none d-lg-block">
@@ -15,39 +42,45 @@
     <button class="navbar-toggler"
             type="button"
             (click)="collapse.toggle()">
-      <span class="navbar-toggler-icon d-flex align-items-center justify-content-center"></span>
+      <span class="navbar-toggler-icon d-flex align-items-center justify-content-center">Icon here</span>
     </button>
     <ngx-navbar-collapse id="main-nav"
                          #collapse="ngxNavbarCollapse">
-      <ul class="navbar-nav mr-auto">
+      <ul class="navbar-nav mr-auto hover-menu font-weight-bold">
         <li class="nav-item nav-item-spacing">
           <a class="nav-link header-fonts-tabs"
-             href="movies">Top Movies</a>
+             href="movies"
+             translate>header.top.movies</a>
         </li>
         <li class="nav-item nav-item-spacing">
           <a class="nav-link header-fonts-tabs"
-             href="coming-soon">Coming Soon</a>
+             href="coming-soon"
+             translate>header.coming.soon</a>
         </li>
         <li class="nav-item nav-item-spacing">
           <a class="nav-link header-fonts-tabs"
-             href="recommendations">Recommendations</a>
+             href="recommendations"
+             translate>header.recommendations</a>
         </li>
       </ul>
-      <div class="btn-group"
+      <div class="btn-group logout-position"
            dropdown>
         <a dropdownToggle
            class="btn dropdown-toggle header-fonts-logout">Johnny1241</a>
         <ul id="dropdown-basic"
             *dropdownMenu
-            class="dropdown-menu"
+            class="dropdown-menu logout-menu hover-menu"
             role="menu">
           <li role="menuitem">
             <a class="dropdown-item"
-               href="#">Account</a>
+               href="#"
+               translate>header.account.settings</a>
           </li>
           <li class="divider dropdown-divider"></li>
           <li role="menuitem">
-            <a class="dropdown-item" href="#">Logout</a>
+            <a class="dropdown-item"
+               href="#"
+               translate>header.logout</a>
           </li>
         </ul>
       </div>

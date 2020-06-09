@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
+import {TranslateService} from '@ngx-translate/core';
+import {CONFIG} from './app.constants';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'movie-ratings-frontend';
+
+  constructor(private translateService: TranslateService) {
+    translateService.addLangs([CONFIG.ENGLISH_LANG_CODE, CONFIG.GERMAN_LANG_CODE]);
+    translateService.setDefaultLang(CONFIG.ENGLISH_LANG_CODE);
+  }
+
 }

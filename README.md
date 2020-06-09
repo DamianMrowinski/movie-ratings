@@ -1,7 +1,7 @@
 Movie Ratings
 ---------------------------------------------
 
-This project contains technologies:
+#### This project contains technologies:
 - Angular 9
 - Spring Boot 2.2.2
 - Java 11
@@ -18,11 +18,9 @@ The application will allow to:
 - check coming soon movies
 - show recommendations
 
-The main purpose of the application is using Angular 9 in practice.
+###### To run the application you need to install: Java JDK 11, Node.js, Docker
 
-Currently, I'm acquiring knowledge of Angular to finish this project.
-
-## How to run application
+#### How to run application step by step:
 
 Backend:
 ```

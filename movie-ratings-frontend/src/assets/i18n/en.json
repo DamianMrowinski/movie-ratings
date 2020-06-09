@@ -1,0 +1,11 @@
+{
+  "header.account.settings": "Settings",
+  "header.coming.soon": "Coming Soon",
+  "header.logout": "Logout",
+  "header.recommendations": "Recommendations",
+  "header.top.movies": "Top Movies",
+  "moviePage.table.rank": "Rank",
+  "moviePage.table.rating": "Rating",
+  "moviePage.table.title": "Title",
+  "moviePage.table.year": "Release date"
+}
