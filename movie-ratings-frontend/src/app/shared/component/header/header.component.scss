@@ -1,10 +1,3 @@
-.flag-menu {
-  font-size: 12px;
-  text-align: left;
-  min-width: 50px;
-  border: none;
-}
-
 .header-fonts-logout {
   color: goldenrod;
   font-size: 18px;
@@ -31,26 +24,15 @@
   min-width: 50px;
 }
 
-.logout-position {
-  margin-left: 115px;
-}
-
-.nav-item-spacing {
-  margin-left: 3.13rem;
-}
-
-#language-flag {
-  float: right;
-  height: 5px;
-  margin-top: 10px;
-}
-
 #logo-jpg {
   height: 95px;
   margin-bottom: 5px;
 }
 
+.nav-element-padding {
+  margin-left: 40px;
+}
+
 .select-language {
-  margin-top: 12px;
   float: right;
 }

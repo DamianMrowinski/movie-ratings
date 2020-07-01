@@ -1,4 +1,5 @@
 <div class="container">
+  <hr>
   <div class="movie-details-img">
     <img src="{{ movie.imgUrl }}"
          class="rounded-lg"
@@ -11,10 +12,23 @@
     <rating [(ngModel)]="rate"
             [max]="max"
             [readonly]="isReadonly"
-            id="rating-stars"></rating>
-    <p>Rate: {{rate}}</p>
-    <p>Director: {{ movie.director }}</p>
-    <p>Country: {{ movie.country }}</p>
-    <p>Year: {{ movie.year }}</p>
+            id="rating-stars">
+    </rating>
+    <br>
+    <p class="one-row"
+       translate>movieDetails.rating</p>
+    <p class="one-row">: {{rate}}</p>
+    <br>
+    <p class="one-row"
+       translate>movieDetails.director</p>
+    <p class="one-row">: {{ movie.director }}</p>
+    <br>
+    <p class="one-row"
+       translate>movieDetails.country</p>
+    <p class="one-row">: {{ movie.country }}</p>
+    <br>
+    <p class="one-row"
+       translate>movieDetails.year</p>
+    <p class="one-row">: {{ movie.year }}</p>
   </div>
 </div>

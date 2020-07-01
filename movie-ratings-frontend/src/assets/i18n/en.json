@@ -1,11 +1,15 @@
 {
-  "header.account.settings": "Settings",
-  "header.coming.soon": "Coming Soon",
-  "header.logout": "Logout",
-  "header.recommendations": "Recommendations",
-  "header.top.movies": "Top Movies",
-  "moviePage.table.rank": "Rank",
-  "moviePage.table.rating": "Rating",
-  "moviePage.table.title": "Title",
-  "moviePage.table.year": "Release date"
+	"header.account.settings": "Settings",
+	"header.coming.soon": "Coming Soon",
+	"header.logout": "Logout",
+	"header.recommendations": "Recommendations",
+	"header.top.movies": "Top Movies",
+	"movieDetails.country": "Country",
+	"movieDetails.director": "Director",
+	"movieDetails.rating": "Rating",
+	"movieDetails.year": "Year",
+	"moviePage.table.rank": "Rank",
+	"moviePage.table.rating": "Rating",
+	"moviePage.table.title": "Title",
+	"moviePage.table.year": "Release date"
 }
